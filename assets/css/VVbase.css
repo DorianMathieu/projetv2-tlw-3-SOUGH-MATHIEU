@@ -1,16 +1,102 @@
-p { color : black; font-family : courier new;}
+
 
 body{
 	background-attachment:fixed;	
 }
 
 .bordershadow {
-    line-height: 70px;
-    text-align : center;
-    border : 2px solid rgb(7, 132, 182);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    /*border : 2px solid rgb(7, 132, 182);
     border-radius : 3px;
-    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
-    transition : all 200ms ease-out;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);*/
+}
+
+.box-destination {
+    
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box-destination:hover {
+    -webkit-transform: scale(1.15, 1.15);
+    transform: scale(1.15, 1.15);
+}
+
+.Londres{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.Inde{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Italie{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.imageDestination{
+    width: 75vh;
+    height: auto;
+}
+
+.box {
+    
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+}
+/*
+  .box-destination:hover::after {
+    opacity: 1;
+}
+
+  .box::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+}*/
+
+#destination{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(100px,auto);
+    box-shadow : 0px 4px 4px #1c1a19;
+    box-align: center;
+    border-radius : 5px;
+    padding-left: 15px;
+    padding-top : 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 
 #validation_formulaire{ 
@@ -22,7 +108,8 @@ body{
 
 }
 
-header {box-shadow : 0px 4px 4px #1c1a19;
+header {
+    box-shadow : 0px 4px 4px #1c1a19;
     border-radius : 5px;
     width : 98%;
     text-shadow: 0 0 3px #ffffff;

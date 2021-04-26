@@ -27,26 +27,29 @@
 
   Ici on a une partie du contenu <br>
   ... <br>
-<form action="validation_formulaire.html" autocomplete="on">
-  <fieldset>
-    <legend>Infos personnelles :</legend>
-      <label for="fname">Prénom:</label><br>
-      <input type="text" id="fname" name="fname" placeholder="Tapez votre prenom ici"><br><br>
 
-      <label for="lname">Nom de famille:</label><br>
-      <input type="text" id="lname" name="lname"placeholder="Tapez votre nom ici"><br><br>
+  <div id="validation_formulaire" style="background-image: url(../../assets/images/fond_grise.png);">
+    <form action="validation_formulaire.html" autocomplete="on">
+    <fieldset>
+      <legend>Infos personnelles :</legend>
+        <label for="fname">Prénom:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Tapez votre prenom ici"><br><br>
 
-      Sexe :<br>
-      <input type="radio" id="male" name="pbtype" value="site">
-      <label for="male">Site</label><br>
-      <input type="radio" id="female" name="pbtype" value="sc">
-      <label for="female">Service client</label><br>
-      <input type="radio" id="other" name="pbtype" value="other">
-      <label for="other">Autre</label><br><br>
+        <label for="lname">Nom de famille:</label><br>
+        <input type="text" id="lname" name="lname"placeholder="Tapez votre nom ici"><br><br>
 
-      <input type="submit" value="Enregistrer">
-  </fieldset>
-</form>
+        Sexe :<br>
+        <input type="radio" id="male" name="pbtype" value="site">
+        <label for="male">Homme</label><br>
+        <input type="radio" id="female" name="pbtype" value="sc">
+        <label for="female">Femme</label><br>
+        <input type="radio" id="other" name="pbtype" value="other">
+        <label for="other">Autre</label><br><br>
+
+        <input type="submit" value="Enregistrer">
+    </fieldset>
+    </form>
+  </div>
 
   La une autre <br>
 

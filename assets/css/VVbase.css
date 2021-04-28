@@ -4,15 +4,19 @@ body{
 	background-attachment:fixed;	
 }
 
-.bordershadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    /*border : 2px solid rgb(7, 132, 182);
-    border-radius : 3px;
-    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);*/
+#TitreM{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 35px;
+
+    text-shadow: 2px 2px 5px red;
+    text-decoration: overline;
+    
+    float:right;
 }
 
-.box-destination {
+.box-destination {/*Boites avec une destination+text +effet*/
     
     position: relative;
     display: inline-block;
@@ -45,12 +49,14 @@ body{
     grid-row: 2;
 }
 
-.imageDestination{
+
+
+.imageDestination{ /*Permet le scale auto des images en fonction de la résolution*/
     width: 40vw;
     height: auto;
 }
 
-.box {
+.box { /*Boites avec effet*/
     
     position: relative;
     display: inline-block;
@@ -86,12 +92,17 @@ body{
 }*/
 
 #destination{
+
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 40px 50px;
+
     justify-content: center;
     grid-template-rows: minmax(100px,auto);
+
     box-shadow : 0px 4px 4px #1c1a19;
     box-align: center;
+
     border-radius : 5px;
     padding-left: 15px;
     padding-top : 15px;

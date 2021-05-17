@@ -4,6 +4,7 @@ body{
     
 	background-attachment:fixed;
     text-align: center;
+    margin : 0;
     /*box-sizing: border-box;*/
     /*margin-left:5%;*/
 }
@@ -32,10 +33,13 @@ body{
     position: relative;
     display: inline-block;
     text-align: center;
-    background-color: #fff;
+    height :50%;
+    /*background-color: #fff;*/
+    overflow : hidden;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 126, 243, 0.1);
     border-radius: 5px;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -67,7 +71,7 @@ body{
 }
 
 
-
+/*
 .Londres{
     grid-column: 1;
     grid-row: 1;
@@ -86,7 +90,8 @@ body{
 .Istanbul{
     grid-column: 2;
     grid-row: 2;
-}
+}*/
+
 
 .imagelogo{/*Permet le scale auto des images en fonction de la résolution*/
     width: 6vw;
@@ -97,8 +102,9 @@ body{
 }
 
 .imageDestination{ /*Permet le scale auto des images en fonction de la résolution*/
-    width: 40vw;
-    height: auto;
+    width: 99vw;
+    vertical-align: bottom;
+    /*height: auto;*/
 }
 
 .imageLien{ /*Permet le scale auto des images en fonction de la résolution*/
@@ -150,7 +156,7 @@ body{
 #destination{
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 40px 50px;
 
     justify-content: center;
@@ -158,7 +164,6 @@ body{
 
     box-shadow : 0px 4px 4px #1c1a19;
     box-align: center;
-
     
     border-radius : 5px;
     padding: 20px;
@@ -179,33 +184,27 @@ body{
   }
 
 header {
-    /*box-shadow : 0px 4px 4px #1c1a19;
-    border-radius : 5px;*/
-    /*width : 100%;*/
     height:auto;
 
-    /*display: flex;*/ /*box>a gauche*/
+    display: flex; /*box>a gauche*/
     align-items: center;
 
     text-shadow: 0 0 3px #ffffff;
    
-    vertical-align: middle;
-
     background: none rgb(250, 250, 250,0.9);
+    box-shadow : 0px 4px 4px #1c1a19;
 
     padding-left : 15px;
     padding-top : 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-   /* margin-top : 25px;
-    margin-right : 25px;
-    margin-top : 25px;
-    margin-bottom : 25px;*/
-    }
+   
+}
 
-footer { box-shadow : 0px 4px 4px #1c1a19;
-    /*width : 92%;*/
-    border-radius : 5px;
+footer { 
+    box-shadow : 0px 4px 4px #1c1a19;
+    background: none rgba(1, 46, 77, 0.514);
+    /*border-radius : 5px;*/
     color : white;
     padding : 10px;
     }

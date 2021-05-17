@@ -13,7 +13,7 @@ body{
     font-weight: bold;
     font-variant: small-caps;
     font-size: 35px;
-
+   
     text-shadow: 2px 2px 5px red;
     text-decoration: overline;
     
@@ -28,22 +28,45 @@ body{
 }
 
 .box-destination {/*Boites avec une destination+text +effet*/
-    
+
     position: relative;
     display: inline-block;
     text-align: center;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px rgba(0, 126, 243, 0.1);
     border-radius: 5px;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+
+.box-destination::after {
+    content :'';
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 132, 255, 0.3);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
 .box-destination:hover {
     -webkit-transform: scale(1.10, 1.10);
     transform: scale(1.10, 1.10);
+
 }
+
+.box-destination:hover::after {
+    opacity: 1;
+}
+
+
 
 .Londres{
     grid-column: 1;
@@ -60,11 +83,16 @@ body{
     grid-row: 2;
 }
 
+.Istanbul{
+    grid-column: 2;
+    grid-row: 2;
+}
 
 .imagelogo{/*Permet le scale auto des images en fonction de la résolution*/
-    width: 8vw;
+    width: 6vw;
     height: auto;
     float :left;
+    /*vertical-align: center;*/
     clear:left;
 }
 
@@ -131,13 +159,10 @@ body{
     box-shadow : 0px 4px 4px #1c1a19;
     box-align: center;
 
-    width: 92%;
-
+    
     border-radius : 5px;
-    padding-left: 15px;
-    padding-top : 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 20px;
+    margin-top: 15px;
 }
 
 #validation_formulaire{ 
@@ -154,12 +179,12 @@ body{
   }
 
 header {
-    box-shadow : 0px 4px 4px #1c1a19;
-    border-radius : 5px;
-    width : 100%;
+    /*box-shadow : 0px 4px 4px #1c1a19;
+    border-radius : 5px;*/
+    /*width : 100%;*/
     height:auto;
 
-    display: flex;
+    /*display: flex;*/ /*box>a gauche*/
     align-items: center;
 
     text-shadow: 0 0 3px #ffffff;
@@ -172,14 +197,14 @@ header {
     padding-top : 15px;
     padding-right: 15px;
     padding-bottom: 15px;
-    margin-top : 25px;
+   /* margin-top : 25px;
     margin-right : 25px;
     margin-top : 25px;
-    margin-bottom : 25px;
+    margin-bottom : 25px;*/
     }
 
 footer { box-shadow : 0px 4px 4px #1c1a19;
-    width : 92%;
+    /*width : 92%;*/
     border-radius : 5px;
     color : white;
     padding : 10px;

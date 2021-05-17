@@ -4,7 +4,8 @@ body{
     
 	background-attachment:fixed;
     text-align: center;
-    margin-left:5%;
+    /*box-sizing: border-box;*/
+    /*margin-left:5%;*/
 }
 
 #TitreM{
@@ -70,6 +71,17 @@ body{
 .imageDestination{ /*Permet le scale auto des images en fonction de la résolution*/
     width: 40vw;
     height: auto;
+}
+
+.imageLien{ /*Permet le scale auto des images en fonction de la résolution*/
+    width: 10vw;
+    height: auto;
+    float :right;
+    clear:right;
+}
+
+.imageLien:hover{
+    filter : invert(55%);
 }
 
 .box { /*Boites avec effet*/
@@ -144,15 +156,17 @@ body{
 header {
     box-shadow : 0px 4px 4px #1c1a19;
     border-radius : 5px;
-    width : 92%;
+    width : 100%;
     height:auto;
 
     display: flex;
-  align-items: center;
+    align-items: center;
 
     text-shadow: 0 0 3px #ffffff;
    
     vertical-align: middle;
+
+    background: none rgb(250, 250, 250,0.9);
 
     padding-left : 15px;
     padding-top : 15px;

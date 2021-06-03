@@ -61,36 +61,14 @@ body{
   }
 
 .box-destination:hover {
-    -webkit-transform: scale(1.10, 1.10);
-    transform: scale(1.10, 1.10);
+    -webkit-transform: scale(1.09, 1.09);
+    transform: scale(1.09, 1.09);
 
 }
 
 .box-destination:hover::after {
     opacity: 1;
 }
-
-
-/*
-.Londres{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.Inde{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.Italie{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.Istanbul{
-    grid-column: 2;
-    grid-row: 2;
-}*/
 
 
 .imagelogo{/*Permet le scale auto des images en fonction de la résolution*/
@@ -102,7 +80,7 @@ body{
 }
 
 .imageDestination{ /*Permet le scale auto des images en fonction de la résolution*/
-    width: 99vw;
+    width: 90vw;
     vertical-align: bottom;
     /*height: auto;*/
 }

@@ -9,6 +9,7 @@ body{
     /*margin-left:5%;*/
 }
 
+/*HeaDer*/
 #TitreM{
     font-family: "Lucida Console", "Courier New", monospace;
     font-weight: bold;
@@ -17,7 +18,7 @@ body{
    
     text-shadow: 2px 2px 5px red;
     text-decoration: overline;
-    
+    width : 40vw;
     float:Left;
 }
 
@@ -28,18 +29,20 @@ body{
     float:right;
 }
 
+/*Body destinations*/
 .box-destination {/*Boites avec une destination+text +effet*/
-
+    opacity: 1;
     position: relative;
-    display: inline-block;
+    display: flex;
     text-align: center;
-    height :50%;
+    width: 50vw;
+    height :30vw;
     /*background-color: #fff;*/
     overflow : hidden;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 126, 243, 0.1);
     border-radius: 5px;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -53,16 +56,29 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    box-shadow: 0 5px 15px rgba(0, 132, 255, 0.3);
+    height: 90%;
+    box-shadow: 0 15px 15px rgba(0, 132, 255, 0.3);
     opacity: 0;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
+}
+
+.box-destination-text{
+    display: flex;
+    opacity: 0;
+
+}
+
+.box-destination:hover>.box-destination-text{
+    opacity: 1;
+}
 
 .box-destination:hover {
+    opacity: 1;
     -webkit-transform: scale(1.09, 1.09);
     transform: scale(1.09, 1.09);
+    width:88vw ;
 
 }
 
@@ -70,9 +86,10 @@ body{
     opacity: 1;
 }
 
-
+/*Gestions Images*/
 .imagelogo{/*Permet le scale auto des images en fonction de la résolution*/
     width: 6vw;
+    min-width: 65px;
     height: auto;
     float :left;
     /*vertical-align: center;*/
@@ -80,13 +97,19 @@ body{
 }
 
 .imageDestination{ /*Permet le scale auto des images en fonction de la résolution*/
-    width: 90vw;
+    /*width: 90vw;*/
+    /*background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    width: fit-content;*/
+    height: 85%;
+    
+    /*background-image:  url("../images/Degradefd.png") , url("../images/Londre.jpg") ;*/
     vertical-align: bottom;
     /*height: auto;*/
 }
 
 .imageLien{ /*Permet le scale auto des images en fonction de la résolution*/
     width: 10vw;
+    min-width: 100px;
     height: auto;
     float :right;
     clear:right;

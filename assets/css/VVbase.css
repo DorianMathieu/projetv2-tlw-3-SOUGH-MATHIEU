@@ -1,7 +1,7 @@
 
-
+/*GENERAL*/
 body{
-    
+    background-image: url('../images/Fond_carte.jpg');
 	background-attachment:fixed;
     text-align: center;
     margin : 0;
@@ -234,8 +234,11 @@ h5{
 #Corps_nous_contacter{
     padding : 15px;
     width: 50%;
-    display: inline-block;
-    vertical-align: middle;
+    background-image: url("../images/fond_grise.png");
+    box-shadow : 0px 4px 4px #1c1a19;
+    border-radius : 5px;
+    margin :0 auto;
+    margin-top: 15px;
 }
 
 #Informations_contacts{
@@ -249,3 +252,12 @@ h5{
 }
 
 
+#corp_confirmation{
+    padding : 15px;
+    width: 50%;
+    background-image: url("../images/fond_grise.png");
+    box-shadow : 0px 4px 4px #1c1a19;
+    border-radius : 5px;
+    margin :0 auto;
+    margin-top: 15px;
+}

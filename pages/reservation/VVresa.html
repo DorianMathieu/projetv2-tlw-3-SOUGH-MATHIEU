@@ -45,23 +45,33 @@
         <input type="radio" id="female" name="pbtype" value="sc">
         <label for="female">Femme</label><br>
         <input type="radio" id="other" name="pbtype" value="other">
-        <label for="other">Autre</label><br><br>
-
-        <label for="lname">Nombre d’adultes :</label><br>
-        <input type="tel" id="tel" name="tel"placeholder=""><br><br>
-        
-        <!--<iframe src="https://calendar.google.com/calendar/embed?src=12q416erdjr2536fobdju4trm8%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+        <label for="other">Autre / Non binaire</label><br><br>
 
         <label for="lname">Entrez votre date d'arrivée : </label><br>
-        <input type="date" id="start" name="trip-start"
-        value="2021-06-10"
+        <input type="date" required="required" id="start" name="trip-start"
         min="2000-01-01" max="2042-12-12"><br>
 
         <label for="lname">Entrez votre date de départ : </label><br>
-        <input type="date" id="start" name="trip-start"
-        value="2042-07-22"
+        <input type="date" required="required" id="start" name="trip-start"
         min="2000-01-01" max="2042-12-12"><br>
         <br>
+
+        <label for="nb_adultes">Nombre d’adultes :</label><br>
+        <input type="number" required="required" id="nb_ad" name="nombre_adultes"placeholder="0"><br><br>
+
+        <label for="nb_enfants">Nombre d’enfants (-12 ans) :</label><br>
+        <input type="number" required="required" id="nb_children" name="nombre_enfantss"placeholder="0"><br><br>
+        
+        <!--<iframe src="https://calendar.google.com/calendar/embed?src=12q416erdjr2536fobdju4trm8%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+
+        <label for="petit déjeuner">Petit-déjeuner ? </label><br>
+        <input type="checkbox" id="breakfast" name="petit_dej"><br><br>
+
+        <label for="renseignements">Renseignements supplémentaires:</label>
+        <textarea id="validation_formulaire" name="renseignements" rows="8" cols="50"></textarea><br><br>
+
+        Prix TTC : <input name="prix" type="text" size="10"><br><br>
+        <input type="reset" value="Réinitialiser le formulaire">
         <input type="submit" value="Enregistrer">
         <!--<input type="submit" value="Enregistrer" onclick="location.href='VVconfirmation.html';" />-->
         

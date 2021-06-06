@@ -24,7 +24,7 @@
   ... <br>
 
   <div id="validation_formulaire" style="background-image: url(../../assets/images/fond_grise.png);">
-    <form action="VVconfirmation.html" autocomplete="on"> <!-- method="POST" -->
+    <form action="VVconfirmation.html" autocomplete="on" method="GET"> <!-- method="GET" -->
     <fieldset>
       <legend>Infos personnelles :</legend>
         <label for="fname">Prénom:</label><br>
@@ -34,45 +34,45 @@
         <input type="text" required="required" id="lname" name="lname"placeholder="Tapez votre nom ici"><br><br>
 
         <label for="lname">Adresse Mail :</label><br>
-        <input type="email" required="required" id="adresse_mail" name="amail"placeholder="example@voyage.com"><br><br>
+        <input type="email" required="required" id="amail" name="amail"placeholder="example@voyage.com"><br><br>
 
         <label for="lname">Téléphone :</label><br>
         <input type="tel" id="tel" name="tel"placeholder="+33...."><br><br>
 
         Sexe :<br>
-        <input type="radio" id="male" name="pbtype" value="site">
+        <input type="radio" id="male" name="pbtype" value="male">
         <label for="male">Homme</label><br>
-        <input type="radio" id="female" name="pbtype" value="sc">
+        <input type="radio" id="female" name="pbtype" value="female">
         <label for="female">Femme</label><br>
         <input type="radio" id="other" name="pbtype" value="other">
         <label for="other">Autre / Non binaire</label><br><br>
 
         <label for="lname">Entrez votre date d'arrivée : </label><br>
-        <input type="date" required="required" id="start" name="trip-start"
+        <input type="date" required="required" id="start_d" name="start_d"
         min="2000-01-01" max="2042-12-12"><br>
 
         <label for="lname">Entrez votre date de départ : </label><br>
-        <input type="date" required="required" id="start" name="trip-start"
+        <input type="date" required="required" id="end_d" name="end_d"
         min="2000-01-01" max="2042-12-12"><br>
         <br>
 
         <label for="nb_adultes">Nombre d’adultes :</label><br>
-        <input type="number" required="required" id="nb_ad" name="nombre_adultes"placeholder="0"><br><br>
+        <input type="number" required="required" id="nb_ad" name="nb_ad"placeholder="0"><br><br>
 
         <label for="nb_enfants">Nombre d’enfants (-12 ans) :</label><br>
-        <input type="number" required="required" id="nb_children" name="nombre_enfantss"placeholder="0"><br><br>
+        <input type="number" required="required" id="nb_children" name="nb_children"placeholder="0"><br><br>
         
         <!--<iframe src="https://calendar.google.com/calendar/embed?src=12q416erdjr2536fobdju4trm8%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
 
         <label for="petit déjeuner">Petit-déjeuner ? </label><br>
-        <input type="checkbox" id="breakfast" name="petit_dej"><br><br>
+        <input type="checkbox" id="breakfast" name="breakfast"><br><br>
 
         <label for="renseignements">Renseignements supplémentaires:</label>
-        <textarea id="validation_formulaire" name="renseignements" rows="8" cols="50"></textarea><br><br>
+        <textarea id="infos_s" name="infos_s" rows="8" cols="50"></textarea><br><br>
 
         Prix TTC : <input name="prix" type="text" size="10"><br><br>
         <input type="reset" value="Réinitialiser le formulaire">
-        <input type="submit" value="Enregistrer">
+        <input type="submit" id="button_valider" value="Enregistrer" disabled>
         <!--<input type="submit" value="Enregistrer" onclick="location.href='VVconfirmation.html';" />-->
         
     </fieldset>
@@ -92,11 +92,8 @@
     <a href="../../VVsrc.html"> <font color="white">Remonter</font></a>
     </div>
     <nav id="lien_instal">
-      <ul>
-      
-      </ul>
     </nav>
   </footer>
-
+  <script type="text/javascript" src="./VVresa.js"></script>
 </body>
 </html>

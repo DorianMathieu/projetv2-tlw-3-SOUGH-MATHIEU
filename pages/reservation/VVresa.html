@@ -15,10 +15,22 @@
   <header class="clearfix" >
     <div include_html="../../shared/header.html"></div>
   </header>
-  
 
-  <div id="validation_formulaire" style="background-image: url(../../assets/images/fond_grise.png);">
-    <form action="VVconfirmation.html" autocomplete="on" method="GET"> <!-- method="GET" -->
+
+  <div id="template_resa">
+    <template id="info_destination">
+      <span>
+          <img class="image_info" src='../../{{imgPath}}' alt='{{alt}}'>
+          <p><span class="text_info">Description : </span> {{nom}}</p>
+          <p><span class="text_info">Prix (psn/j) : </span> {{price}} euros</p>
+          <p><span class="text_info">Possibilité pour les Animaux : </span> {{animaux}}</p>
+          <p><span class="text_info">Possibilité pour le petit déjeuner : </span> {{petitDej}}</p>
+      </span>
+    </template>
+  </div>
+  <div id="validation_formulaire">
+    
+    <form action="./VVconfirmation.html" autocomplete="on" method="GET"> <!-- method="GET" -->
     <fieldset>
       <legend>Infos personnelles :</legend>
         <label for="fname">Prénom:</label><br>
@@ -27,10 +39,10 @@
         <label for="lname">Nom de famille:</label><br>
         <input type="text" required="required" id="lname" name="lname"placeholder="Tapez votre nom ici"><br><br>
 
-        <label for="lname">Adresse Mail :</label><br>
+        <label for="amail">Adresse Mail :</label><br>
         <input type="email" required="required" id="amail" name="amail"placeholder="example@voyage.com"><br><br>
 
-        <label for="lname">Téléphone :</label><br>
+        <label for="tel">Téléphone :</label><br>
         <input type="tel" id="tel" name="tel"placeholder="+33...."><br><br>
 
         Sexe :<br>
@@ -58,13 +70,22 @@
         
         <!--<iframe src="https://calendar.google.com/calendar/embed?src=12q416erdjr2536fobdju4trm8%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
 
-        <label for="petit déjeuner">Petit-déjeuner ? </label><br>
+        <label for="breakfast">Petit-déjeuner ? </label><br>
         <input type="checkbox" id="breakfast" name="breakfast"><br><br>
 
         <label for="renseignements">Renseignements supplémentaires:</label>
         <textarea id="infos_s" name="infos_s" rows="8" cols="50"></textarea><br><br>
 
-        <label for="prix">Prix TTC :</label>
+        <label for="not_robot">
+          <div id="template_robot">
+            <template id="not_robot">
+              <p><span class="text_info">Vous n'etes pas un robot, entrez :</span> {{id}}</p>
+            </template>
+          </div>
+        </label>
+        <input type="number" required="required" id="id_rbot" name="id_rbot" placeholder="0"><br><br>
+
+        <label for="price">Prix TTC :</label>
         <input  type="number" name="price" id="price"  value="" readonly>
 
         <!--<input name="prix" type="text" size="10"><br><br>-->
@@ -80,7 +101,7 @@
   <footer>
     <div include_html="../../shared/footer.html"></div>
   </footer>
-  <script type="text/javascript" src="./VVresa.js"></script>
+  <script type="module" src="./VVresa.js"></script>
   <script type="text/javascript" src="../../shared/includeHTML.js"></script>
 </body>
 </html>

@@ -18,6 +18,23 @@
 
 
   <div id="corp_confirmation">
+
+    <div id="template_confirm">
+      <template id="info_recap">
+        <span>
+            <img class="image_info" src='../../{{imgPath}}' alt='{{alt}}'>
+
+            <p><span class="text_info">Prenom : </span> {{fname}}</p>
+            <p><span class="text_info">Nom : </span> {{lname}}</p>
+            <p><span class="text_info">Email : </span> {{amail}}</p>
+            <p><span class="text_info">Nombre d'adultes : </span> {{nb_ad}}</p>
+            <p><span class="text_info">Nombre d'enfants : </span> {{nb_children}}</p>
+            <p><span class="text_info">Prix du séjour : </span> {{price}} euros</p>
+            <!--<p><span class="text_info">Description : </span> {{nom}}</p>-->
+        </span>
+      </template>
+    </div>
+
     <h2>Merci de votre confiance et à bientôt à destination !</h2>
     Vous pouvez consulter votre réservation dans votre espace client et effectuer des demandes de modification sur celles ci.
   </div>
@@ -28,7 +45,7 @@
     <div include_html="../../shared/footer.html"></div>
   </footer>
   
-  <script type="text/javascript" src="./VVconfirmation.js"></script>
+  <script type="module" src="./VVconfirmation.js"></script>
   <script type="text/javascript" src="../../shared/includeHTML.js"></script>
 </body>
 </html>

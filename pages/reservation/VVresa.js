@@ -1,4 +1,5 @@
-
+import * as VVvar from '../../shared/VVvar.js';
+var id;
 
 window.addEventListener("load", init);
 
@@ -27,6 +28,7 @@ function verif()
     //console.log(end_d.value)
     var button_valider=document.getElementById("button_valider")
 
+    var price = document.getElementById('price');
 
 
     
@@ -64,13 +66,13 @@ function dayDiff(d1, d2)
 }
 
 
-function calcul_prix(nb_ad, nb_children, breakfast, start_d, end_d)
+function price_calculation(nb_ad, nb_children, breakfast, start_d, end_d)
 {
 
-    if (!isNaN(var_json.getById(id).prix * gap)) { //var_json données récupérées dans le json, voir déclaration début de fichier
+    if (!isNaN(var_json.getById(id).price * gap)) { //var_json données récupérées dans le json, voir déclaration début de fichier
         var price_calc = 0
-        price_calc = var_json.getById(id).prix * gap * nb_ad.value;
-        price_calc = price_calc + var_json.getById(id).prix * 0.40 * nb_children.value * gap
+        price_calc = var_json.getById(id).price * gap * nb_ad.value;
+        price_calc = price_calc + var_json.getById(id).price * 0.40 * nb_children.value * gap
         if (breakfast.checked)
         {
             price_calc = price_calc + (12 * (Number(nb_ad.value) + Number(nb_children.value)) * gap);
@@ -78,6 +80,6 @@ function calcul_prix(nb_ad, nb_children, breakfast, start_d, end_d)
           
       }
       price_calc = Math.round(price_calc * 100) / 100;
-      prix.value = price_calc
+      price.value = price_calc
     
 }

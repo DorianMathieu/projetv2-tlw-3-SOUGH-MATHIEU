@@ -1,18 +1,18 @@
 window.addEventListener("load", init);
 
-function $_GET(param) {
-	var vars = {};
+function $_GET(fieldN) {
+	var VVvars = {};
 	window.location.href.replace( location.hash, '' ).replace( 
 		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
 		function( m, key, value ) { // callback
-			vars[key] = value !== undefined ? value : '';
+			VVvars[key] = value !== undefined ? value : '';
 		}
 	);
 
-	if ( param ) {
-		return vars[param] ? vars[param] : null;	
+	if ( fieldN ) {
+		return VVvars[fieldN] ? VVvars[fieldN] : null;	
 	}
-	return vars;
+	return VVvars;
 }
 
 function init()

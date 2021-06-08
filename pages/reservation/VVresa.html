@@ -64,7 +64,10 @@
         <label for="renseignements">Renseignements supplémentaires:</label>
         <textarea id="infos_s" name="infos_s" rows="8" cols="50"></textarea><br><br>
 
-        Prix TTC : <input name="prix" type="text" size="10"><br><br>
+        <label for="prix">Prix TTC :</label>
+        <input  type="number" name="price" id="price"  value="" readonly>
+
+        <!--<input name="prix" type="text" size="10"><br><br>-->
         <input type="reset" value="Réinitialiser le formulaire">
         <input type="submit" id="button_valider" value="Enregistrer" disabled>
         <!--<input type="submit" value="Enregistrer" onclick="location.href='VVconfirmation.html';" />-->

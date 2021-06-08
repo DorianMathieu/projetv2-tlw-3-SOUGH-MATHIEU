@@ -1,4 +1,4 @@
-const dest = [{id:1, ville:"London", nom: "Voyage à London", prix: 120, imgPath:"./assets/images/destinations/Londre.jpg", alt:"Photo Londre", animaux:false, petitDej:true, lat:51.507346150437556, lng:-0.12776035898941673},
+const destinations_Infos = [{id:1, ville:"London", nom: "Voyage à London", prix: 120, imgPath:"./assets/images/destinations/Londre.jpg", alt:"Photo Londre", animaux:false, petitDej:true, lat:51.507346150437556, lng:-0.12776035898941673},
                 {id:2, ville:"Istanbul", nom: "Voyage à Istanbul", prix: 80, imgPath:"./assets/images/destinations/Istanbul_1.jpeg", alt:"Photo Istanbul", animaux:true, petitDej:true, lat:45.46587113086473, lng:9.188484073595873},
                 {id:3, ville:"Paris", nom: "Voyage à Paris", prix: 200, imgPath:"./assets/images/destinations/Paris.jpg", alt:"Photo Paris", animaux:false, petitDej:true, lat:48.86102881074157, lng:2.3300931579040975},
                 {id:4, ville:"5Terres", nom: "Voyage aux 5Terres", prix: 78, imgPath:"./assets/images/destinations/italie_5Tw.jpeg", alt:"Photo 5Terres", animaux:true, petitDej:true, lat:43.77588877886635, lng:11.249034005283741},
@@ -10,8 +10,10 @@ const dest = [{id:1, ville:"London", nom: "Voyage à London", prix: 120, imgPath
 
 
 function getById(id) {
-    for (var d of dest) {
+    for (var d of destinations_Infos) {
         if (d.id == id) return d
     }
     return null
 }
+
+export {destinations_Infos, getById}

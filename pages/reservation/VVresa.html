@@ -12,16 +12,10 @@
 
 <body leftmargin=45>
 
-  <header style="background-image: url(../../assets/images/fond_grise.png);">
-    <br>
-    <img src="../../assets/images/Logo_VV.png" alt="LogoVV" style="width:50px;height:50px;"><br><br>
-    <font face="Lato"><h3></h3>
-    <h1 style="border:2px solid Tomato; color:rgb(71, 218, 255);">VV    -   Reservations !</h1>
+  <header class="clearfix" >
+    <div include_html="../../shared/header.html"></div>
   </header>
   
-
-  Ici on a une partie du contenu <br>
-  ... <br>
 
   <div id="validation_formulaire" style="background-image: url(../../assets/images/fond_grise.png);">
     <form action="VVconfirmation.html" autocomplete="on" method="GET"> <!-- method="GET" -->
@@ -79,21 +73,11 @@
     </form>
   </div>
 
-  La une autre <br>
 
-  <!-- Le reste du contenu -->
-  ...
-
-  <footer style="background-image: url(../../assets/images/fond_grise.png);">
-    <div id="textfooter">
-    Copiright - All right reserved ® <br>
-    <br>
-    <br>
-    <a href="../../VVsrc.html"> <font color="white">Remonter</font></a>
-    </div>
-    <nav id="lien_instal">
-    </nav>
+  <footer>
+    <div include_html="../../shared/footer.html"></div>
   </footer>
   <script type="text/javascript" src="./VVresa.js"></script>
+  <script type="text/javascript" src="../../shared/includeHTML.js"></script>
 </body>
 </html>

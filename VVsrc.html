@@ -12,13 +12,7 @@
 
 <body>
   <header class="clearfix" >
-    <a id="TitreNlogo" href="VVsrc.html">
-      <img class="imagelogo" src="assets/images/Logo_VV.png" alt="LogoVV">
-      <div class="TitreM" >BVN sur Voyage-Voyage ! </div>
-    </a>
-    <a id="LiensNav"  href="pages/contact/VVcontact.html">
-      <img class="imageLien" src="assets/images/Nouscontacter.png" alt="<-Nous Contacter->">
-    </a>
+    <div include_html="./shared/header.html"></div>
   </header>
   
 
@@ -26,7 +20,7 @@
     
     <article class="Londres">
       <a class="box-destination" href="pages/reservation/VVresa.html?ID=1"><!--Ajouter une variable-->
-        <img class="imageDestination" src="assets/images/Londre.jpg" alt="Londre"><!--src="assets/images/Londre.jpg" alt="Londre"-->
+        <img class="imageDestination" src="assets/images/destinations/Londre.jpg" alt="Londre"><!--src="assets/images/Londre.jpg" alt="Londre"-->
         <h5>Londres</h5>
         <p class="box-destination-text">Temperature : x<br>Chambre : x</p>
       </a>
@@ -34,7 +28,7 @@
       
     <article class="Inde">
       <a class="box-destination" href="pages/reservation/VVresa.html?ID=2">
-        <img class="imageDestination" src="assets/images/Taj_Mahal_Inde.jpeg" alt="Inde">
+        <img class="imageDestination" src="assets/images/destinations/Taj_Mahal_Inde.jpeg" alt="Inde">
         <h5>Inde</h5>
         <p class="box-destination-text">Temperature : x<br>Chambre : x</p>
       </a>
@@ -42,7 +36,7 @@
 
     <article class="Italie">
       <a class="box-destination" href="pages/reservation/VVresa.html?ID=3">
-        <img class="imageDestination" src="assets/images/italie_5Tw.jpeg" alt="Italie 5T">
+        <img class="imageDestination" src="assets/images/destinations/italie_5Tw.jpeg" alt="Italie 5T">
         <h5>Italie</h5>
         <p class="box-destination-text">Temperature : x<br>Chambre : x</p>
       </a>
@@ -50,7 +44,7 @@
 
     <article class="Istanbul">
       <a class="box-destination" href="pages/reservation/VVresa.html?ID=4">
-        <img class="imageDestination" src="assets/images/Istanbul_1.jpg" alt="Istanbul">
+        <img class="imageDestination" src="assets/images/destinations/Istanbul_1.jpg" alt="Istanbul">
         <h5>Istanbul</h5>
         <p class="box-destination-text">Temperature : x<br>Chambre : x</p>
       </a>
@@ -59,18 +53,10 @@
 
   <!--<div class="box">CI DESSOUS PLUS LA APRES </div>-->
   <footer>
-    <div id="textfooter">
-    Copiright - All right reserved ® <br>
-    <br>
-    <br>
-    <a href="pages/contact/VVcontact.html"> <font color="white">Remonter</font></a>
-    </div>
-    <nav id="lien_instal">
-      <ul>
-      ICI
-      </ul>
-    </nav>
+    <div include_html="./shared/footer.html"></div>
   </footer>
+
+  <script type="text/javascript" src="./shared/includeHTML.js"></script>
 
 </body>
 </html>

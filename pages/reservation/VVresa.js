@@ -6,6 +6,7 @@ window.addEventListener("load", init);
 var id
 
 function init(){
+
     id = $_GET('id')
     var D_data = VVvars.getById(id)
 
@@ -35,7 +36,7 @@ function init(){
     clone_rbot.firstElementChild.innerHTML = newContent	
     document.getElementById('template_robot').appendChild(clone_rbot);	console.log(D_data.imgPath);
 
-  template_robot
+  //template_robot
 
   var inputs = document.getElementById('validation_formulaire').getElementsByTagName('input')
   for(var i = 0; i < inputs.length; i++) {
@@ -90,11 +91,11 @@ function verif()
 
     var gap = gap_calcul(start_dR, end_dR)
     gap++
-    console.log("gap entre date"+gap)
+    console.log("gap entre date="+gap)
 
     var gap_v= gap_calcul(today_d, start_dR)
     gap_v++
-    console.log("Gap premiere date"+gap_v)
+    console.log("Gap premiere date="+gap_v)
 
     if((gap_v > 0 )&& (nb_ad.value >= 1) && (gap >= 1) && (id_rbot.value==id))
     {
